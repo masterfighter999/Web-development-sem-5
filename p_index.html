@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Swayam - Developer Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			 background-image: url("By Design.jpg");
+			color: white;
+			font-family: 'Mooli', sans-serif;
+		}
+		nav{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			height: 80px;
+		}
+		nav ul{
+			display: flex;
+			justify-content: center;
+		}
+		nav ul li{
+			list-style: none;
+			margin: 0 23px;
+		}
+		nav ul li a{
+			text-decoration: none;
+			color: white;
+		}
+		
+		nav ul li a:hover{
+			color: #42e2ad;
+			font-size: 1.05rem;
+		}
+		
+		main hr{
+			height: 2px;
+		border: 0;
+		background: #e1ce9a;
+		margin: 1px 76px;
+		}
+		
+		.left{
+			font-size: 1.5rem;
+		}
+		.firstSection{
+			display: flex;
+			justify-content: space-around;
+			margin: 29px 0;
+			align-items: center;
+		}
+		
+		.firstSection > div{
+			width: 40%;
+		}
+		
+		.leftSection{
+		
+			font-size: 2.5rem;
+			margin: 30px 0;
+		}
+		
+		.leftSection .buttons{
+			padding: 28px;
+		}
+		
+		.leftSection .btn{
+			padding: 12px;
+			background: #4e89d0;
+			color: white;
+			border: 2px solid white;
+			border-radius: 14px;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		
+		.leftSection .btn:hover{
+			opacity: 0.6;
+		}
+		
+		.rightSection{
+			
+		}
+		.rightSection img{
+			max-width:80%;
+			height:auto;
+			margin: 0px 0;
+		}
+		#element{
+			color: #42e2ad;
+		}
+		
+		.text-gray{
+			color: #ccc9c9;
+			font-size: 11px;
+		}
+		
+		.secondSection{
+			max-width: 89vw;
+			margin: 49px 126px;;
+			height: 80vh;
+		}
+		
+		.secondSection .box{
+			background:white;
+			width: 80vw;
+			height: 2px;
+			margin: 87px 0;
+			display: flex;
+		}
+		
+		.secondSection .vertical{
+			height: 64px;
+			width: 1px;
+			background-color: white;
+			margin: 0 145px;
+		}
+				
+		.vertical-title{
+			position: relative;
+			top: -1px;
+			left: -22px;
+			width: 150px;
+		}
+		
+		.vertical-desc{
+			    width: 64px;
+			position: relative;
+			font-size: 9px;
+			top: 4px;
+			left: -22px;
+		}
+		
+		
+		.image-top{
+			
+			width: 73px;
+			position: relative;
+			top: -70px;
+			left:-36px;
+		}
+		
+		.image-top1{
+			
+			width: 73px;
+			position: relative;
+			top: -76px;
+			left:-36px;
+		}
+		.image-top2{
+			
+			width: 73px;
+			position: relative;
+			top: -73px;
+			left:-36px;
+		}
+		
+		footer{
+			background-image: url("Deep Space.jpg");
+			height: 208px;
+		}
+		
+		.footer{
+			display: flex;
+			padding: 56px 122px;
+			justify-content: space-evenly;
+		}
+		
+		.footer ul{
+			list-style: none;
+		}
+		
+		.footer > div{
+			width: 319px;
+			list-style:	none;		
+		}
+		
+		footer .footer-rights{
+			text-align: center;
+			color: gray;
+			font-size:12px
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="left">Swayam's Portfolio</div>
+			<div class="right"></div>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/">About</a></li>
+					<li><a href="/">Services</a></li>
+					<li><a href="/">Projects</a></li>
+					<li><a href="/">Contact Me</a></li>
+					<li><a href="my image.html">Recently Visited</a></li>
+				</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="firstSection">
+			<div class="leftSection">My Name is <br>
+			<h3 style="color:#eeb4ce">Swayam Chatterjee</h3>
+			<br>
+				<div>This is my first portfolio website. I am a....</div>
+				
+				<!-- Element to contain animated typing -->
+				<span id="element"></span>
+				<div class="buttons">
+					<button class="btn" onclick="resume()">Download Resume</button>
+					<button class="btn" onclick="git()">Visit Github</button>
+					
+				</div>
+			</div>
+			<div class="rightSection">
+			<img src="comp1.jpg">
+			</div>
+		
+		</section>
+		<hr>
+		<section class="secondSection">
+		<span class="text-gray"> What I have done so far</span>
+			<h3>Work Experience</h3>
+			
+			<div class="box">
+				<div class = "vertical">
+					<img class= "image-top" src="html.png">
+					<div class="vertical-title">
+						HTML
+					</div>
+					<div class="vertical-desc">
+						(2021-2022)
+					</div>
+				</div>
+				<div class = "vertical">
+					<img class= "image-top1" src="python.png">
+					<div class="vertical-title">
+						Python
+					</div>
+					<div class="vertical-desc">
+						(2022-2023)
+					</div>
+				</div>
+				<div class = "vertical">
+					<img class= "image-top2" src="mysql.png">
+					<div class="vertical-title">
+						My SQL
+					</div>
+					<div class="vertical-desc">
+						(2023-Present)
+					</div>
+				</div>
+				<div class = "vertical">
+					<img class= "image-top2" src="java.png">
+					<div class="vertical-title">
+						Java
+					</div>
+					<div class="vertical-desc">
+						(2023-Present)
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		
+	</main>
+	<footer>
+		<div class="footer">
+			<div class="footer-first"><h2>Swayam's Developer Portfolio</h2></div>
+			<div class="footer-second">
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+					<li>Services</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+			<div class="footer-third">
+				<li>Usage Policy</li>
+				<li>Terms of Use</li>
+				<li>Privacy Notice</li>
+				<li>Cookie Policy</li>
+			</div>
+			<div class="footer-fourth">
+				<li>+91 6295804451 &#9742;</li>
+				<li><u>swayamchatterjee@gmail.com</u>  &#9993;</li>
+				<li> This page has been viewed <span id="viewCount">0</span> times.</li>
+			</div>
+		</div>
+		<div class="footer-rights">
+			Copyright &#169; www.swayamsportfolio.com | All rights reserved
+		</div>
+	</footer>
+	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+	  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web developer', 'Graphic Designer', 'Content Writer', 'AI Prompt Engineer'],
+      typeSpeed: 50,
+    });
+	
+	/* function resume() {
+		alert("1 saal bad ana");
+	 }
+	 
+	 function git() {
+		alert("Phele phusrat me nikal"):
+	 } */
+	
+	
+	function incrementViewCount() {
+            let count = parseInt(localStorage.getItem("viewCount")) || 0;
+            count++;
+            document.getElementById("viewCount").textContent = count;
+            localStorage.setItem("viewCount", count);
+        }
+
+        /* function resetViewCount() {
+            localStorage.removeItem("viewCount");
+            document.getElementById("viewCount").textContent = "0";
+        }
+
+        document.getElementById("resetButton").addEventListener("click", resetViewCount); */
+        incrementViewCount(); 
+  </script>
+</body>
+</html>
+
